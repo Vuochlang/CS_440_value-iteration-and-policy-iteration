@@ -1,0 +1,40 @@
+<h1>MDPs</h1>
+<p>In this assignment, you'll implement value iteration and policy iteration
+as per the slide deck covered in class.  Note that in contrast to the
+code from the 4th edition of the book, here, rewards are defined over states
+(not over state, action, successor-state triples). Further, the utility of
+a particular state includes the immediate reward obtained in that state.</p>
+<h1>Overview</h1>
+<ol>
+<li>Download the stub <code>mdp.py</code>.</li>
+<li>Look through the code.  I've written some functionality,
+   and the goal is for you to complete it.</li>
+<li>As before the code assumes four spaces of indentation.
+   Set your editor appropriately, this is the default for many.</li>
+</ol>
+<h1>Command Line Invocation</h1>
+<p>Value and Policy iteration should be implemented as top-level functions.
+These functions will be called directly from the test harness.  However,
+a "main" method has also been provided that may help you test your code on
+your own.</p>
+<p>Usage instructions are given when you invoke the function at the command line
+with no arguments:</p>
+<blockquote>
+<p>python mdp.py
+    usage: mdp.py [-h] [--quiet] [--gamma GAMMA] {policy,value} {4x3,2x2}
+    mdp.py: error: too few arguments</p>
+</blockquote>
+<p>the first required argument selects the function to run, the second
+   identifies which of the two provided environments to use.</p>
+<blockquote>
+<p>python msttt.py policy 4x3</p>
+</blockquote>
+<p>for example, runs policy iteration on the 4x3 environment</p>
+<h1>Turn in your code</h1>
+<p>Submit your code via Autolab. Current tests are very limited, but will be improved over the next few days. If you think there's a problem with the tests,
+please check the inline code specification carefully and recheck your
+results.  You may also want to look at the specific test that it's failing
+and try to reproduce that result. If it still looks like the tests are
+incorrect, send me a message and if you're correct, I'm happy to give you
+some extra credit points.</p>
+<p>https://autolab.encs.vancouver.wsu.edu</p>
